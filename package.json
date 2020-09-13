@@ -1,0 +1,23 @@
+{
+  "name": "@digital-wafa/eslint-config",
+  "version": "1.0.0",
+  "description": "eslint configuration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digital-wafa/eslint-config.git"
+  },
+  "author": "Belaicher ANASS <belaicher.anass@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/digital-wafa/eslint-config/issues"
+  },
+  "homepage": "https://github.com/digital-wafa/eslint-config#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.9.0"
+  }
+}
