@@ -3,6 +3,7 @@ module.exports = {
     './non-rules-config.js',
     'eslint:recommended',
   ],
+  ignorePatterns: ["*.svg", "*.css", "*.test.js", "*.spec.js", "*.d.ts"],
   rules: {
     'accessor-pairs': 'error',
     'array-callback-return': 'error',

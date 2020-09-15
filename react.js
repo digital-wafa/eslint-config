@@ -2,11 +2,17 @@ module.exports = {
   parser: "babel-eslint",
   extends: [
     './non-rules-config.js',
+    './best-practices.js',
     'eslint:recommended',
     'plugin:react/recommended',
     'prettier/babel',
     'prettier/react'
   ],
+  "settings": {
+    "react": {
+      "version": "detect", // React version. "detect" automatically picks the version you have installed.
+    },
+  },
   parserOptions: {
     ecmaFeatures: {
       ecmaVersion: 6,
@@ -23,7 +29,7 @@ module.exports = {
     'react/forbid-prop-types': 'off',
     'react/function-component-definition': 'off',
     'react/jsx-boolean-value': 'off',
-    "react/jsx-filename-extension": ["off", { extensions: [".jsx", ".ts", ".tsx"] }], // must fix
+    "react/jsx-filename-extension": ["error", { extensions: [".jsx", ".ts", ".tsx"] }],
     'react/jsx-fragments': 'off',
     'react/jsx-handler-names': 'off',
     'react/jsx-key': 'error',
@@ -62,7 +68,7 @@ module.exports = {
     'react/prefer-stateless-function': 'off',
     'react/prefer-read-only-props': 'off',
     'react/prop-types': 'error',
-    'react/react-in-jsx-scope': 'off', // must fix
+    'react/react-in-jsx-scope': 'error',
     'react/require-default-props': 'off', // sometimes the default value is undefined so that's fine...
     'react/require-optimization': 'off',
     'react/require-render-return': 'error',
