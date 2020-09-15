@@ -1,6 +1,9 @@
-## What it does
+![wafa prettier conifg](images/logo.jpeg)
+# Eslint-config  ![npm version](https://img.shields.io/npm/v/@digital-wafa/eslint-config)
 
-Lints jsx,js,tsx,ts based on the latest standards
+A shared eslint configuration to use in digital wafa projects
+
+***
 
 ## Installing
 
@@ -10,7 +13,7 @@ npm install @digital-wafa/eslint-config --save-dev
 
 It highly recommend extending the base config if you are using `create-react-app` if you don't skip this config :
 
-```json
+```javascript
 {
   "extends": ["react-app"]
 }
@@ -20,7 +23,7 @@ It highly recommend extending the base config if you are using `create-react-app
 
 Add this config to your `.eslintrc` :
 
-```json
+```javascript
 {
   "extends": [
     "@digital-wafa/eslint-config"
@@ -37,7 +40,7 @@ This config also exposes a few other configs that I use often and pull in as nee
 
 You can use them standalone:
 
-```json
+```javascript
 {
   "extends": [
     "@digital-wafa/eslint-config/<config-name>",
@@ -46,7 +49,7 @@ You can use them standalone:
 ```
 Or in combination with the base config (recommended)
 
-```json
+```javascript
 {
   "extends": [
     "@digital-wafa/eslint-config",
@@ -57,7 +60,7 @@ Or in combination with the base config (recommended)
 
 ## Example of highly customized config
 
-```json
+```javascript
 {
   "extends": [
     "@digital-wafa/eslint-config",
@@ -72,7 +75,7 @@ Or in combination with the base config (recommended)
 
 When working with `TypeScript`, you'll need to provide an overrides object for rules that should only target TypeScript files.
 
-```json
+```javascript
 {
   /* your base config */
   "overrides": [
@@ -90,11 +93,13 @@ When working with `TypeScript`, you'll need to provide an overrides object for r
 
 You can add two scripts to your package.json to lint and/or fix:
 
-```json
-"scripts": {
-  "lint": "eslint ./src/*",
-  "lint:fix": "eslint ./src/* --fix"
-},
+```javascript
+{
+  "scripts": {
+    "lint": "eslint ./src/*",
+    "lint:fix": "eslint ./src/* --fix"
+  },
+}
 ```
 
 Tip: You can alternatively put this object in your `package.json` under the property `"eslintConfig":`. This makes one less file in your project.
