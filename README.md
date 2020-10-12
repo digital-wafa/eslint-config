@@ -1,4 +1,4 @@
-![wafa prettier conifg](images/logo.jpeg)
+![wafa eslint config](images/logo.jpeg)
 # Eslint-config  ![npm version](https://img.shields.io/npm/v/@digital-wafa/eslint-config)
 
 A shared eslint configuration to use in digital wafa projects
